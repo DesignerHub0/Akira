@@ -14,7 +14,7 @@ body {
     position: fixed;
     z-index: 2147483647;
     right: 0px;
-    background-color: rgb(255, 92, 92);
+    background-color: rgb(0, 0, 0);
     top: 0px;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
@@ -212,11 +212,11 @@ header {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(207, 207, 207);
 }
 
 header::before {
-    background-color: rgb(242, 252, 255);
+    background-color: rgb(255, 255, 255);
     content: "";
     position: absolute;
     width: 30%;
@@ -224,7 +224,7 @@ header::before {
     right: 0px;
     top: 0px;
     z-index: -1;
-    border-left: 3px solid;
+    border-left: 3px solid rgb(207, 207, 207);
 }
 
 .top-bar ul li {
@@ -237,7 +237,7 @@ header::before {
 
 .top-bar ul li a:hover,
 .top-bar a:hover {
-    color: rgb(255, 92, 92);
+    color: rgb(0, 0, 0);
 }
 
 .top-bar ul li a,
@@ -249,9 +249,9 @@ header::before {
     position: relative;
     padding-top: 70px;
     overflow: hidden;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 70px;
-    border-bottom: 3px solid rgb(0, 0, 0);
+    /* border-bottom: 3px solid rgb(207, 207, 207); */
 }
 
 .hero-section img.shaps {
@@ -351,7 +351,7 @@ ul.stars li {
 }
 
 ul.stars li i {
-    color: rgb(255, 213, 69);
+    color: rgb(255, 255, 255);
     font-size: 14px;
 }
 
@@ -390,7 +390,7 @@ form#contact-form h3 {
     padding: 60px 50px 50px;
     border-radius: 40px;
     position: relative;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     box-shadow: rgb(0, 0, 0) 14px 14px 0px 0px;
 }
 
@@ -404,7 +404,7 @@ form#contact-form h3 {
     font-size: 14px;
     border-radius: 45px;
     padding: 25px;
-    border: 1px solid rgb(193, 193, 193);
+    border: 1px solid rgb(207, 207, 207);
 }
 
 .get-a-quote p {
@@ -452,17 +452,17 @@ form#contact-form h3 {
 }
 
 .btn {
-    background-color: rgb(179, 171, 171);
+    background-color: rgb(255, 255, 255);
     padding: 14px 38px;
     border-radius: 37px;
-    color: rgb(255, 255, 255);
-    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     font-weight: 800;
     letter-spacing: 1px;
 }
 
 .btn:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px;
 }
 
@@ -474,7 +474,7 @@ form#contact-form h3 {
 .heading span {
     font-size: 18px;
     letter-spacing: 1px;
-    color: rgb(255, 92, 92);
+    color: rgb(0, 0, 0);
     font-weight: 900;
     padding-bottom: 10px;
     display: block;
@@ -497,9 +497,7 @@ form#contact-form h3 {
     position: absolute;
     width: 12px;
     height: 12px;
-    background-color: rgb(255, 92, 92);
-    border-radius: 27px;
-    border: 1px solid;
+    background-color: rgb(0, 0, 0);
     left: 0px;
     top: 5px;
 }
@@ -508,7 +506,7 @@ form#contact-form h3 {
     width: 100%;
     height: 210px;
     background-color: rgb(242, 234, 255);
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     border-radius: 20px;
     padding: 40px;
     transition: all 0.3s ease-in-out 0s;
@@ -549,12 +547,12 @@ form#contact-form h3 {
 }
 
 .consulting-business {
-    background-color: #ededea;
-    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(237, 237, 234);
+    border: 3px solid rgb(207, 207, 207);
     padding: 50px 80px;
     border-radius: 30px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -564,6 +562,8 @@ form#contact-form h3 {
 
 .consulting-business-text img {
     transition: all 0.3s ease-in-out 0s;
+    overflow: hidden;
+    display: block;
 }
 
 .consulting-business-text:hover img {
@@ -572,15 +572,20 @@ form#contact-form h3 {
 
 .consulting-business-img {
     width: 230px;
-    height: 230px;
+    height: 154px;
     background-color: rgb(255, 255, 255);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     margin-bottom: 30px;
     position: relative;
+    /* overflow: hidden; */
+}
+
+.consulting-business-img .img-blk {
+    overflow: hidden;
 }
 
 .consulting-business-img span {
@@ -588,12 +593,12 @@ form#contact-form h3 {
     height: 40px;
     position: absolute;
     bottom: 0px;
-    background-color: rgb(255, 92, 92);
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     display: flex;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(207, 207, 207);
     font-weight: bold;
     line-height: 0;
     font-size: 18px;
@@ -608,13 +613,13 @@ form#contact-form h3 {
 }
 
 .services {
-    background-color: rgb(242, 252, 255);
-    border-top: 3px solid rgb(0, 0, 0);
-    border-bottom: 3px solid rgb(0, 0, 0);
+    background-color: rgb(237, 237, 234);
+    /* border-top: 3px solid rgb(207, 207, 207); */
+    /* border-bottom: 3px solid rgb(207, 207, 207); */
 }
 
 .service-text {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     padding: 40px;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
@@ -650,13 +655,13 @@ form#contact-form h3 {
 }
 
 .service-text.three {
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
 }
 
 .service-text.two {
     margin-top: 30px;
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
 }
 
 .service-text.two i {
@@ -673,11 +678,11 @@ form#contact-form h3 {
 
 ul.star {
     justify-content: center;
-    background-color: rgb(255, 213, 69);
+    background-color: rgb(255, 255, 255);
     display: inline-flex;
     padding: 6px 26px;
     border-radius: 26px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     margin-bottom: 40px;
 }
 
@@ -722,7 +727,7 @@ a.brand.in i {
 }
 
 a.brand i {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     position: absolute;
     left: 10px;
     top: 10px;
@@ -739,9 +744,9 @@ a.brand i {
 .team-text {
     position: relative;
     text-align: center;
-    background-color: rgb(255, 250, 205);
+    background-color: rgb(237, 237, 234);
     border-radius: 30px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     padding: 30px;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -752,8 +757,10 @@ a.brand i {
 
 .team-text>img {
     border-radius: 50px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     transition: all 0.3s ease-in-out 0s;
+    height: auto;
+    max-width: 30%;
 }
 
 .team-text a img {
@@ -764,17 +771,17 @@ a.brand i {
     text-align: center;
     width: 98%;
     margin: auto auto 55px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     padding: 60px 150px;
     border-radius: 50px;
     position: relative;
 }
 
 .quotation-mark img {
-    background-color: rgb(255, 92, 92);
+    background-color: rgb(0, 0, 0);
     width: 60px;
     height: 60px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     padding: 11px;
     border-radius: 50%;
     margin-bottom: 20px !important;
@@ -804,7 +811,7 @@ a.brand i {
 
 .quotation-mark::before {
     content: "";
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     width: 88%;
     height: 30px;
     position: absolute;
@@ -816,7 +823,7 @@ a.brand i {
 
 .quotation-mark::after {
     content: "";
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     width: 82%;
     height: 30px;
     position: absolute;
@@ -828,7 +835,7 @@ a.brand i {
 
 .quotation button.owl-dot.active {
     border-radius: 21px;
-    border: 6px solid rgb(255, 92, 92);
+    border: 6px solid rgb(207, 207, 207);
     background-color: transparent;
     width: 16px;
     height: 16px;
@@ -838,7 +845,7 @@ a.brand i {
     width: 16px;
     height: 16px;
     border-radius: 21px;
-    border: 6px solid rgb(197, 197, 197);
+    border: 6px solid rgb(207, 207, 207);
     margin: 5px;
 }
 
@@ -849,9 +856,9 @@ a.brand i {
 }
 
 .pricing-plan {
-    background-color: rgb(242, 252, 255);
-    border-top: 3px solid rgb(0, 0, 0);
-    border-bottom: 3px solid rgb(0, 0, 0);
+    background-color: rgb(237, 237, 234);
+    /* border-top: 3px solid rgb(207, 207, 207); */
+    /* border-bottom: 3px solid rgb(207, 207, 207); */
 }
 
 .pricing-pr {
@@ -859,7 +866,7 @@ a.brand i {
     border-radius: 20px;
     padding: 40px 40px 30px;
     position: relative;
-    border-bottom: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(207, 207, 207);
 }
 
 .pricing-pr.two {
@@ -889,8 +896,8 @@ a.brand i {
     display: flex;
     align-items: center;
     height: 70px;
-    border: 3px solid rgb(0, 0, 0);
-    background-color: rgb(255, 92, 92);
+    border: 3px solid rgb(207, 207, 207);
+    background-color: rgb(0, 0, 0);
     padding: 18px;
     border-radius: 50%;
     position: absolute;
@@ -900,7 +907,7 @@ a.brand i {
 
 .pricing-plan-style {
     background-color: white;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     border-radius: 20px;
     padding-bottom: 40px;
     width: 94%;
@@ -921,7 +928,7 @@ a.brand i {
     width: 12px;
     height: 12px;
     display: block;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     border-radius: 50%;
     margin-right: 10px;
     margin-top: -2px;
@@ -952,7 +959,7 @@ a.brand i {
 }
 
 .join-now-text span {
-    color: rgb(255, 92, 92);
+    color: rgb(0, 0, 0);
 }
 
 .join-now-text h6 {
@@ -1025,9 +1032,9 @@ img.shaps {
     height: 2.5rem;
     transform: translateY(-50%);
     right: 1%;
-    background-color: rgb(255, 92, 92);
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(207, 207, 207);
 }
 
 .accordion-item .icon::before,
@@ -1074,7 +1081,7 @@ img.shaps {
 }
 
 .accordion-item {
-    border: 1px solid rgb(0, 0, 0) !important;
+    border: 1px solid rgb(207, 207, 207);
 }
 
 .accordion-item:first-of-type {
@@ -1090,7 +1097,7 @@ img.shaps {
 }
 
 .accordion-item:not(:first-of-type) {
-    border: 1px solid rgb(195, 195, 195);
+    border: 1px solid rgb(207, 207, 207);
 }
 
 .accordion-item.active:not(:first-of-type),
@@ -1108,7 +1115,7 @@ a.heading {
     background-color: rgb(242, 252, 255);
     padding: 20px;
     border-radius: 20px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     margin-bottom: 130px;
 }
 
@@ -1119,7 +1126,7 @@ a.heading {
 
 .clients-slider.owl-carousel img {
     margin: auto auto 5px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     padding: 30px 50px;
     border-radius: 30px;
     transition: all 0.3s ease-in-out 0s;
@@ -1131,9 +1138,9 @@ a.heading {
 
 footer {
     padding-bottom: 30px;
-    background-color: lemonchiffon;
+    background-color: #FFF;
     padding-top: 140px;
-    border-top: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid rgb(207, 207, 207);
 }
 
 .footer-text {
@@ -1166,7 +1173,7 @@ footer {
 }
 
 .footer-address {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
     border-radius: 25px;
     padding: 0px;
     overflow: hidden;
@@ -1174,10 +1181,11 @@ footer {
 }
 
 .address {
-    background-color: rgb(242, 234, 255);
+    background-color: rgb(255, 255, 255);
     padding: 40px;
-    border-right: 3px solid rgb(0, 0, 0);
+    border-right: 3px solid rgb(207, 207, 207);
     border-radius: 25px 0px 0px 25px;
+    height: 100%;
 }
 
 .address.phone p a {
@@ -1189,14 +1197,14 @@ footer {
 }
 
 .address.phone {
-    background-color: rgb(244, 255, 201);
+    background-color: rgb(255, 255, 255);
     border-radius: 0px;
 }
 
 .address.email {
     border-radius: 0px;
     border-right: 0px;
-    background-color: rgb(230, 250, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 p.footer-p {
@@ -1231,7 +1239,7 @@ footer img.shaps {
 #progress-value {
     height: calc(110% - 15px);
     width: calc(110% - 15px);
-    background-color: rgb(255, 92, 92);
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -1249,7 +1257,7 @@ span#progress-value i {
 
 .swal-modal {
     background-color: lemonchiffon;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(207, 207, 207);
 }
 
 .heading-center {
@@ -1347,8 +1355,6 @@ span#progress-value i {
     border-radius: 40px;
     outline: 0px;
     margin-right: 10px;
-    padding-left: 30px;
-    border: 3px solid;
 }
 
 .hero-section.click-here p {
